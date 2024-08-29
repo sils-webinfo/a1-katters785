@@ -22,3 +22,23 @@ PREFIX : <http://example.org/>
   :title "Understanding W.G. Sebald" ;
   :pages 193 ;
   :about :w-g-sebald .
+
+# Write Turtle statements descripting the book Dark Secrets of Manning Hall by Nathaniel Hornblower, published by Random House in 1985. 
+
+# CMD + i, then paste statement in to text box and hit enter
+
+# Run program with make books.png
+
+:nathaniel-hornblower a :Author ;
+  :given_name "Nathaniel" ;
+  :surname "Hornblower" ;
+  :authored :dark-secrets-of-manning-hall .
+
+:dark-secrets-of-manning-hall a :Book ;
+  :title "Dark Secrets of Manning Hall" ;
+  :published_by :random-house ;
+  :published_year 1985 .
+
+:random-house a :Publisher ;
+  :name "Random House" .
+
